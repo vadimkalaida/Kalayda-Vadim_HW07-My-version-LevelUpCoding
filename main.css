@@ -1,0 +1,103 @@
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Arvo", sans-serif;
+    text-decoration: none;
+}
+
+#sidebar {
+    width: 270px;
+    height: 480px;
+    position: fixed;
+    background: #CB6866;
+    border-radius: 10px;
+    border-right: 4px solid #B14E4C;
+    left: -270px;
+    transition: 0.4s;
+}
+
+#sidebar.active {
+    left: -5px;
+}
+
+#sidebar ul {
+    padding-top: 15px;
+}
+
+#sidebar ul li:first-child {
+    cursor: default;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 36px;
+    list-style: none;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+#sidebar ul li:not(:first-child) {
+    padding: 25px 10px 10px 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    list-style: none;
+}
+
+#sidebar ul li a {
+    color: #EDF3F9;
+    transition: 0.2s;
+}
+
+#sidebar ul li a:hover {
+    color: rgba(237,243,249, .8);
+}
+
+.toggle-btn {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    left: 295px;
+    top: 15px;
+    background: #F1C5C3;
+    border-bottom: 2px solid #DCB0AE;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.toggle-btn:hover {
+    background: #F3D1CF;
+}
+
+.toggle-btn:active {
+    background: #EA6161;
+}
+
+.toggle-btn:active .menu-open-btn {
+    color: #EDF3F9;
+}
+
+.toggle-btn:active .menu-exit-btn {
+    color: #EDF3F9;
+}
+
+.toggle-btn .menu-open-btn {
+    margin-top: 10px;
+    transition: 0.2s;
+}
+
+
+.toggle-btn .menu-exit-btn {
+    margin-top: 10px;
+    transition: 0.2s;
+}
+
+
